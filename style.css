@@ -5,6 +5,7 @@
 :root {
   --purple: #87119a;
   --light-blue: #9ecefa;
+  --dark-blue:rgb(63, 143, 218);
   --White: hsl(0, 0%, 100%);
   --gray: rgba(63, 63, 63, 0.544);
 }
@@ -55,7 +56,6 @@ body {
   text-decoration: none;
   color: var(--gray);
   font-weight: 600;
-  text-decoration: none;
   font-style: normal;
   font-size: 24px;
 }
@@ -65,6 +65,13 @@ body {
 .header nav .header-nav li a:active {
   color: #87119a;
   text-decoration: revert;
+}
+.menu-responsive{
+  color: var(--White);
+  display: none;
+}
+.menu-despliegue{
+  display: none;
 }
 .container {
   width: 90em;
@@ -181,9 +188,10 @@ footer div {
   justify-content: space-around;
   align-items: center;
 }
-@media only screen and (max-width: 600px) {
-  .logo img{
 
+@media only screen and (max-width: 600px) {
+/* header responsive hambuerguesa*/
+.logo img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -192,27 +200,66 @@ footer div {
 }
 
 .header nav .header-nav {
+  display: none;
+}
+/* al tener resolucion mobil agrego icon hamburguesa */
+.menu-responsive{
+  color: var(--White);
+  display: block;
+  cursor: pointer;
+  z-index: 20;
+}
+ .menu-responsive:hover{
+  color: var(--purple);
+} 
+/* genera el evento de aparacer y desaparecer */
+:checked ~ .menu-despliegue {
+  display: block;
+  right: 0;
+ 
+}
+/* este checked no lo muestro en la vista */
+input.oculto[type=checkbox] {
+  position: absolute;left: -999em;
+}
+/*-----------  */
+.menu-despliegue
+{
+  position: fixed;
+  width: 40%;
+  height: 100vh;
+  background-color: var(--dark-blue);
+  right: -100%;
+  top: 0;
+  text-align: center;
+/*   padding: 100px 0; */
+  z-index: 1;
+  transition: .8s;
+} 
+.menu-despliegue ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   list-style: none;
-}
-.header nav .header-nav > li {
-    margin-left: 15px;
-}
-
-.header nav .header-nav li a {
+  gap: 2em;
+  height: 100%;
+} 
+ .menu-despliegue ul li a{
+  color: var(--White);
   text-decoration: none;
-  color: var(--gray);
-  font-weight: 100;
-  font-size: 1.5em;
-}
+} 
+.menu-despliegue ul li a:hover{
+  color: var(--purple);
+  text-decoration: none;
+} 
+/* -------------- */
 .container {
   width: 90%;
   max-width: 100%;
   margin: auto;
-  
+  position: relative;
 }
+
 .container-article .grilla {
   display: flex;
   justify-content: center;
