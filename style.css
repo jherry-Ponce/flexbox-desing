@@ -211,10 +211,14 @@ input.oculto[type=checkbox] {
   color: var(--White);
   display: block;
   cursor: pointer;
-  z-index: 20;
-  position: fixed;
-  right: 1em;
-
+}
+.menu-cierre{
+  color: var(--White);
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 2em;
+  right: 2em;
 }
  .menu-responsive:hover{
   color: var(--purple);
@@ -225,7 +229,11 @@ input.oculto[type=checkbox] {
   right: 0;
  
 }
-
+:checked ~ .menu-responsive {
+  position: fixed;
+  right: 1em;
+  z-index: 20;
+}
 /*-----------  */
 .menu-despliegue
 {
