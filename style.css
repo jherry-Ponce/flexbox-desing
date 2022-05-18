@@ -233,6 +233,15 @@ footer div {
   margin-top: 2.6em;
   padding:0 0.5em;
 }
+.container-article .image4 {
+  height: 34em;
+  width: 55em;
+  max-width: 100%;
+  padding: 0%;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
+}
 footer {
 margin-top: 1em;
 width: 100%;
