@@ -8,12 +8,15 @@
   --White: hsl(0, 0%, 100%);
   --gray: rgba(63, 63, 63, 0.544);
 }
+html{
+	scroll-behavior: smooth;
+}
 body {
   font-family: "Heebo", sans-serif;
   background-color: var( --White);
 }
 .header {
-  
+  margin: auto;
   height: 90px;
   display:flex;
   justify-content:  space-between; 
@@ -30,6 +33,14 @@ body {
     object-position: center;
     object-fit: cover;
 }
+.header nav {
+  width: 90em;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
 
 .header nav .header-nav {
   display: flex;
@@ -38,7 +49,6 @@ body {
 }
 .header nav .header-nav > li {
     margin-left: 20px;
-  
 }
 
 .header nav .header-nav li a {
@@ -57,10 +67,12 @@ body {
   text-decoration: revert;
 }
 .container {
-  margin: 0% 2.2em;
+  width: 90em;
+  max-width: 100%;
+  margin: auto;
 }
 .container-article {
-  width: 100%;
+  max-width: 100%;
   margin-top: 2.6em;
 }
 .container-article .letter {
@@ -174,12 +186,10 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
- 
   list-style: none;
 }
 .header nav .header-nav > li {
     margin-left: 15px;
-  
 }
 
 .header nav .header-nav li a {
@@ -187,6 +197,19 @@ footer div {
   color: var(--gray);
   font-weight: 100;
   font-size: 1.5em;
+}
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+}
+.container-article .image4 {
+  height: 34em;
+  width: 55em;
+  max-width: 100%;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
 }
 footer {
 margin-top: 1em;
