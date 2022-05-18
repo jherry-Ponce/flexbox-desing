@@ -183,7 +183,7 @@ footer div {
 }
 @media only screen and (max-width: 600px) {
   .logo img{
-    display: none;
+
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -220,20 +220,14 @@ footer div {
 }
 .container-article .image3 {
   height: 219px;
-  max-width: 100%;
+  width: 100%;
+
   padding: 1em;
   border-radius: 10%;
   object-position: center;
   object-fit: cover;
 }
-.container-article .image4 {
-  height: 34em;
-  width: 55em;
-  max-width: 100%;
-  border-radius: 20px;
-  object-position: center;
-  object-fit: cover;
-}
+
 .container-article {
   max-width: 100%;
   margin-top: 2.6em;
