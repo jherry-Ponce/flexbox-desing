@@ -70,10 +70,12 @@ body {
   width: 90em;
   max-width: 100%;
   margin: auto;
+  
 }
 .container-article {
   max-width: 100%;
   margin-top: 2.6em;
+  padding:0 2em;
 }
 .container-article .letter {
   color: #87119a;
@@ -128,14 +130,26 @@ body {
   object-position: center;
   object-fit: cover;
 }
+.container-article .grilla {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
 .container-article .image3 {
   height: 219px;
+  width: 17.5em;
   max-width: 100%;
-  width: 280px;
   padding: 1em;
   border-radius: 10%;
   object-position: center;
   object-fit: cover;
+}
+.contacto-flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .container-article .image4 {
   height: 34em;
@@ -146,12 +160,7 @@ body {
   object-position: center;
   object-fit: cover;
 }
-.contacto-flex {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+
 .contacto-directorio {
   margin: 1em;
   font-style: normal;
@@ -161,7 +170,7 @@ body {
   text-align: center;
 }
 footer {
-    margin-top: 2em;
+  margin-top:2em;
   width: 100%;
   height: 4em;
   background-color: var(--light-blue);
@@ -169,7 +178,7 @@ footer {
 footer div {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media only screen and (max-width: 600px) {
@@ -202,6 +211,20 @@ footer div {
   width: 90%;
   max-width: 100%;
   margin: auto;
+  
+}
+.container-article .grilla {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-article .image3 {
+  height: 219px;
+  max-width: 100%;
+  padding: 1em;
+  border-radius: 10%;
+  object-position: center;
+  object-fit: cover;
 }
 .container-article .image4 {
   height: 34em;
@@ -210,6 +233,11 @@ footer div {
   border-radius: 20px;
   object-position: center;
   object-fit: cover;
+}
+.container-article {
+  max-width: 100%;
+  margin-top: 2.6em;
+  padding:0 0.5em;
 }
 footer {
 margin-top: 1em;
