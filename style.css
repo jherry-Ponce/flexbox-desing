@@ -190,7 +190,8 @@ footer div {
 }
 /* este checked no lo muestro en la vista */
 input.oculto[type=checkbox] {
-  position: absolute;left: -999em;
+  position: fixed;
+  display: none;
 }
 @media only screen and (max-width: 600px) {
 /* header responsive hambuerguesa*/
@@ -211,6 +212,9 @@ input.oculto[type=checkbox] {
   display: block;
   cursor: pointer;
   z-index: 20;
+  position: fixed;
+  right: 1em;
+
 }
  .menu-responsive:hover{
   color: var(--purple);
