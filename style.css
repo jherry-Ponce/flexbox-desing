@@ -188,7 +188,10 @@ footer div {
   justify-content: space-around;
   align-items: center;
 }
-
+/* este checked no lo muestro en la vista */
+input.oculto[type=checkbox] {
+  position: absolute;left: -999em;
+}
 @media only screen and (max-width: 600px) {
 /* header responsive hambuerguesa*/
 .logo img{
@@ -218,21 +221,16 @@ footer div {
   right: 0;
  
 }
-/* este checked no lo muestro en la vista */
-input.oculto[type=checkbox] {
-  position: absolute;left: -999em;
-}
+
 /*-----------  */
 .menu-despliegue
 {
   position: fixed;
+  top: 0;
   width: 40%;
   height: 100vh;
   background-color: var(--dark-blue);
-  right: -100%;
-  top: 0;
   text-align: center;
-/*   padding: 100px 0; */
   z-index: 1;
   transition: .8s;
 } 
